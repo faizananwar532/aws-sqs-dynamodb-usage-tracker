@@ -11,7 +11,7 @@ variable "secret_key" {
 
 variable "region" {
   description = "default region for all aws resources"
-  default     = "us-east-2"
+  sensitive = true
 }
 
 variable "sqs_queue_name" {
